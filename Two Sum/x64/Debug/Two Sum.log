@@ -1,0 +1,4 @@
+﻿  main.c
+K:\Магистратура\1 семестр\LeetCode\Two Sum\main.c(31,17): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+K:\Магистратура\1 семестр\LeetCode\Two Sum\main.c(32,21): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  Two Sum.vcxproj -> K:\Магистратура\1 семестр\LeetCode\x64\Debug\Two Sum.exe

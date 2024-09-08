@@ -1,0 +1,5 @@
+﻿  main.c
+K:\Магистратура\1 семестр\LeetCode\Add Two Number\main.c(115,24): warning C4013: new: нет определения; предполагается "extern" с возвратом типа "int"
+K:\Магистратура\1 семестр\LeetCode\Add Two Number\main.c(115,36): error C2143: синтаксическая ошибка: отсутствие ")" перед "тип"
+K:\Магистратура\1 семестр\LeetCode\Add Two Number\main.c(115,22): warning C4047: =: "ListNode *" отличается по уровням косвенного обращения от "int"
+K:\Магистратура\1 семестр\LeetCode\Add Two Number\main.c(115,44): error C2059: синтаксическая ошибка: )
