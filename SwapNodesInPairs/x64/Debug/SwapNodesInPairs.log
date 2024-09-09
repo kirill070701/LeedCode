@@ -1,0 +1,10 @@
+﻿  main.c
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(32,9): warning C4477: "printf": в строке форматирования "%x" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "person *"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(32,9): warning C4313: printf: конфликт "%x" в строке формата с аргументом 1 типа "person *"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(34,9): warning C4477: "printf": в строке форматирования "%x" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "person *"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(34,9): warning C4313: printf: конфликт "%x" в строке формата с аргументом 1 типа "person *"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(36,9): warning C4477: "printf": в строке форматирования "%x" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "person *"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(36,9): warning C4313: printf: конфликт "%x" в строке формата с аргументом 1 типа "person *"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(63,9): warning C4477: "printf": в строке форматирования "%p" требуется аргумент типа "void *", но вариативный аргумент "1" имеет тип "person"
+K:\Магистратура\1 семестр\LeetCode\SwapNodesInPairs\main.c(63,9): warning C4477: "printf": в строке форматирования "%p" требуется аргумент типа "void *", но вариативный аргумент "2" имеет тип "person"
+  SwapNodesInPairs.vcxproj -> K:\Магистратура\1 семестр\LeetCode\x64\Debug\SwapNodesInPairs.exe
