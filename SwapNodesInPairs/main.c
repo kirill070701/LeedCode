@@ -8,10 +8,15 @@ struct ListNode {
 	struct ListNode* next;
 };
 
-struct ListNode* swapPairs(struct ListNode*);
+
 
 int main() {
-	struct ListNode* data  = malloc(sizeof(struct ListNode));
+	struct person* one = malloc(sizeof(struct person));
+	one->val = 1;
+	struct person two = {.val = 2};
+	struct person three = {.val = 3};
+	struct person four = {.val = 4};
+
 	data->next = NULL;
 	//struct ListNode two_data = {.val = 2};
 	//struct ListNode three_data = {.val = 3};
@@ -20,16 +25,16 @@ int main() {
 	//struct ListNode six_data = { .val = 6 };
 	//struct ListNode seven_data = { .val = 7 };
 
-	//data->next = &two_data;
+	one->before = &two;
 	//two_data.next = &three_data;
 	//three_data.next = &four_data;
 	//four_data.next = &five_data;
 	//five_data.next = &six_data;
 	//six_data.next = &seven_data;
 
-	struct ListNode* datas = swapPairs(data);
+	Test2(one);
 
-	while (datas != NULL) {
+	free(one);
 		printf("%d ", datas->val);
 		datas = datas->next;
 	}
