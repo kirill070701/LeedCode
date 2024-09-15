@@ -3,62 +3,61 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct person {
+struct ListNode {
 	int val;
-	struct person* before;
+	struct ListNode* next;
 };
 
-void Test2(struct person*);
+struct ListNode* swapPairs(struct ListNode*);
 
 int main() {
-	struct person* one = malloc(sizeof(struct person));
-	one->val = 1;
-	struct person two = {.val = 2};
-	struct person three = {.val = 3};
+	struct ListNode* data  = malloc(sizeof(struct ListNode));
+	data->next = NULL;
+	//struct ListNode two_data = {.val = 2};
+	//struct ListNode three_data = {.val = 3};
+	//struct ListNode four_data = {.val = 4};
+	//struct ListNode five_data = { .val = 5 };
+	//struct ListNode six_data = { .val = 6 };
+	//struct ListNode seven_data = { .val = 7 };
 
-	one->before = &two;
-	two.before = &three;
+	//data->next = &two_data;
+	//two_data.next = &three_data;
+	//three_data.next = &four_data;
+	//four_data.next = &five_data;
+	//five_data.next = &six_data;
+	//six_data.next = &seven_data;
 
-	Test2(one);
+	struct ListNode* datas = swapPairs(data);
 
-	free(one);
+	while (datas != NULL) {
+		printf("%d ", datas->val);
+		datas = datas->next;
+	}
 
 	return 0;
 }
 
-void Test2(struct person* head) {
-	struct person* p = head;
+struct ListNode* swapPairs(struct ListNode* head) {
 
-	printf("%x %d %d\n", p, p->val, head->val);
-	head = head->before;
-	printf("%x %d %d\n", p, p->val, head->val);
-	head = head->before;
-	printf("%x %d %d\n", p, p->val, head->val);
+	if (head == 0)return head;
 
+	struct ListNode* link_head = head->next;
+	struct ListNode* start_registr_head = head;
 
-}
+	int t;
+	if (head->next != NULL) {
+		while (1)
+		{
+			t = head->val;
+			head->val = link_head->val;
+			link_head->val = t;
 
-void Test() {
-	struct person* head, * p;
-	head = NULL;
+			if (link_head->next == NULL || link_head->next->next == NULL) break;
 
-	for (int i = 10; i > 0; i--) {
-		p = (struct person*)malloc(sizeof(struct person));
-		p->val = i;
-		p->before = head;
-		head = p;
+			link_head = link_head->next->next;
+			head = head->next->next;
+
+		}
 	}
-
-	printf("\n");
-	for (int i = 0; i < 10; i++) {
-		printf("%d\n", p->val);
-		p = p->before;
-	}
-
-	while (head != NULL) {
-		p = head->before;
-		free(head);
-		head = p;
-	}
-	printf("\n%p %p\n", *p, *head);
+	return start_registr_head;
 }
